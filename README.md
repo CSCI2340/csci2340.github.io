@@ -15,9 +15,54 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 ![Front End HLD](/img/Front-End-Figma.jpg)
 
 
+User Component:
+Communicates input between users and program
+Features include: Mouse, keyboard, and Camera Detection
+Security: Safe camera access
+Technology: TSX
+
+UI Component:
+Acts as a central connection between the user and the processes. Displays output to the user component.
+Features include: User Panel, Dataset Selection, Parameter Customization, Animations, 
+Technology: NextJS, p5.js, three.js, canvas.js
+
+
+
+Generative Component:
+Combines user data and api data to generate and/or compute output
+Risks: May be slow
+Technology: TSX/Python
+
+Gateway Component:
+Connects the Front-End and Back-End
+Technology: TypeScript
+
+
+
+
 ### Back-End
 
 ![Back End HLD](/img/Back-End-Figma.jpg)
+Back-End Driver:
+Combines user requests with real time data from external API to affect image processing.
+Technologies: Python
+
+API Caller:
+Way of accessing external data relevant to user input selections
+Technologies: Python
+
+Database:
+Stores recent data for faster computations.
+Technologies: SQL
+
+
+
+### Shared Components
+Logging:
+Provides logging data to user and programs to help catch bugs
+
+Error Handling:
+Provides accurate error codes to make errors more verbose and helps programmers to deduce bugs in code
 
 
 
