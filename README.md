@@ -26,41 +26,38 @@ Acts as a central connection between the user and the processes. Displays output
 Features include: User Panel, Dataset Selection, Parameter Customization, Animations, <br />
 Technology: NextJS, p5.js, three.js, canvas.js <br />
 
-Generative Component:
-Combines user data and api data to generate and/or compute output
-Risks: May be slow
-Technology: TSX/Python
+#### Generative Component:
+Combines user data and api data to generate and/or compute output <br />
+Risks: May be slow <br />
+Technology: TSX/Python <br />
 
-Gateway Component:
-Connects the Front-End and Back-End
-Technology: TypeScript
-
-
-
+#### Gateway Component:
+Connects the Front-End and Back-End <br />
+Technology: TypeScript <br />
 
 ### Back-End
 
 ![Back End HLD](/img/Back-End-Figma.jpg)
-Back-End Driver:
-Combines user requests with real time data from external API to affect image processing.
-Technologies: Python
+#### Back-End Driver:
+Combines user requests with real time data from external API to affect image processing. <br />
+Technologies: Python <br />
 
-API Caller:
-Way of accessing external data relevant to user input selections
-Technologies: Python
+#### API Caller:
+Way of accessing external data relevant to user input selections <br />
+Technologies: Python <br />
 
-Database:
-Stores recent data for faster computations.
-Technologies: SQL
+#### Database:
+Stores recent data for faster computations. <br />
+Technologies: SQL <br />
 
 
 
 ### Shared Components
-Logging:
-Provides logging data to user and programs to help catch bugs
+#### Logging:
+Provides logging data to user and programs to help catch bugs <br />
 
-Error Handling:
-Provides accurate error codes to make errors more verbose and helps programmers to deduce bugs in code
+#### Error Handling:
+Provides accurate error codes to make errors more verbose and helps programmers to deduce bugs in code <br />
 
 
 
