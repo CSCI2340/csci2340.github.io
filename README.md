@@ -2,7 +2,7 @@
 This is the GitHub Pages Site for CSCI 2340: Software Engineering, Art Generator Project at Brown University. <br />
 **Members**: Malique Bodie, David Doan, Alina Kim, Gus LeTourneau, Yingjia Liu, Alexander Pratt, Morgann Thain, Haiyang Wang <br />
 **Semester**: Spring 2024 <br />
-**Current Project Repository:** [Art Generator Repository](https://github.com/newalina/art-gen)
+**Current Project Repository:** [Art Generator Repository](https://github.com/newalina/art-gen)<br />
 **Contact for Feedback:** alina_kim@brown.edu
 
 ## Product Overview for February 29th, 2024
@@ -15,18 +15,16 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 ![Front End HLD](/img/Front-End-Figma.jpg)
 
 
-User Component:
-Communicates input between users and program
-Features include: Mouse, keyboard, and Camera Detection
-Security: Safe camera access
-Technology: TSX
+#### User Component:
+Communicates input between users and program <br />
+Features include: Mouse, keyboard, and Camera Detection <br />
+Security: Safe camera access <br />
+Technology: TSX <br />
 
-UI Component:
-Acts as a central connection between the user and the processes. Displays output to the user component.
-Features include: User Panel, Dataset Selection, Parameter Customization, Animations, 
-Technology: NextJS, p5.js, three.js, canvas.js
-
-
+#### UI Component:
+Acts as a central connection between the user and the processes. Displays output to the user component. <br />
+Features include: User Panel, Dataset Selection, Parameter Customization, Animations, <br />
+Technology: NextJS, p5.js, three.js, canvas.js <br />
 
 Generative Component:
 Combines user data and api data to generate and/or compute output
