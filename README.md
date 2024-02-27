@@ -2,7 +2,9 @@
 This is the GitHub Pages Site for CSCI 2340: Software Engineering, Art Generator Project at Brown University. <br />
 **Members**: Malique Bodie, David Doan, Gus LeTourneau, Yingjia Liu, Alexander Pratt, Morgann Thain, Haiyang Wang <br />
 **Semester**: Spring 2024 <br />
- 
+ **Current Project Repository:** [Art Generator Repo!](https://github.com/newalina/art-gen)
+
+
 ## Product Overview for February 29th, 2024
 
 ### Overall Product Description
