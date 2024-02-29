@@ -10,6 +10,15 @@ This is the GitHub Pages Site for CSCI 2340: Software Engineering, Art Generator
 ### Overall Product Description
 The Art Generator Project is a user-driven, web-based art generation product that provides its user with modified images and videos using real-time data centered around social causes. Users can provide input of live camera input or generic stock photos, which will be modified depending upon data relating to climate change including rising temperatures, ice melting, deforestation, rising sea levels, and wildlife exctinctions. Users will be able to share their new art creations by file download or through social media. This project places an emphasis on security and privacy for user data that is used in the application.
 
+### Product Specifications
+* The interface will support a share button that allows the user to specify the desired output format ie. gif, image, or short video, as well as a destination that includes social media sites and a local download option. <br />
+* The web application will take user web cam data as input and generate various stylized, data-specific outputs. The generated output will be a creative representation of environmental data, using color, motion, and intensity to represent various trends in the data. <br />
+* The user will have the ability to choose from multiple environmental datasets including global temperature, water level, precipitation rates, etc… which will each generate different data-specific outputs that reflect creative renderings of the environmental data trends. <br />
+* The main user interface will be a web application that takes user inputs through user panel and generate outputs(image/ gif/ video) accordingly. <br />
+* The interface will generate texts explaining how we generate the outputs(which dataset is employed) and the meaning behind them(what’s the environmental or social impact) base on user’s dataset choice. <br />
+* The interface will include a user panel such that the user can adjust parameters or choosing between datasets to generate specific output they desire. <br />
+
+
 ### Front-End 
 
 ![Front End HLD](/img/Front-End-Figma.jpg)
@@ -40,7 +49,7 @@ Technology: TypeScript <br />
 ![Back End HLD](/img/Back-End-Figma.jpg)
 #### Back-End Driver:
 Combines user requests with real time data from external API to affect image processing. <br />
-Technologies: Python <br />
+Technologies: Python, OpenCV <br />
 
 #### API Caller:
 Way of accessing external data relevant to user input selections <br />
