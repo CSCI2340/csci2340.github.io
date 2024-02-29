@@ -71,11 +71,11 @@ Provides accurate error codes to make errors more verbose and helps programmers 
 
 
 ### Team Member Expected Assignments
-**Malique Bodie:** Backend - Backend/Database Interaction <br />
+**Malique Bodie:** Backend - Backend Driver <br />
 **David Doan:** Backend - Backend/Frontend Communication <br />
-**Alina Kim:** Frontend - Art Generation Computation, UI <br />
+**Alina Kim:** Team Lead, Designer - Art Generation Computation, UI <br />
 **Gus LeTourneau:** Frontend - Backend/Frontend Communication, UI <br />
 **Yingjia Liu:** Frontend - Output to File, External Media Sites  <br />
-**Alexander Pratt:** Backend - External API Interfacing, Storage, and Usage <br />
-**Morgann Thain:** Backend - Backend Driver <br />
-**Haiyang Wang:** Frontend - User Input and Security <br />
+**Alexander Pratt:** Code Manager, Systems Lead - External API Interfacing, Storage, and Usage <br />
+**Morgann Thain:** Database and Generative Elements Lead - Backend/Database Interaction <br />
+**Haiyang Wang:** Frontend Lead - User Input and Security <br />
