@@ -37,16 +37,16 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 **Description:** The Front End - Back End Gateway is the gateway between the Front End Driver and Back End Driver of the Art Generation Project. This gateway is essentially the space in which messages are sent between the Front End Driver and Back End Driver to provide data to either module. <br/>
 
 #### External API Access
-**Description:** The External API Access represents the Back End Driver using external API for two purpsoes. The first purpose is to gather data from organizations like NASA, NOAA, EPA, UN, etc, that can be used to drive the art generation portion of this project. The second purpose is to use external API from social media sites like Snapchat, Facebook, Instagram, and X, so that the System User can directly upload their images to be shared across the internet. 
+**Description:** The External API Access represents the Back End Driver using external API for two purpsoes. The first purpose is to gather data from organizations like NASA, NOAA, EPA, UN, etc, that can be used to drive the art generation portion of this project. The second purpose is to use external API from social media sites like Snapchat, Facebook, Instagram, and X, so that the System User can directly upload their images to be shared across the internet. <br/>
 
 #### Social Cause Data
-**Description:** As mentioned in the "External API Access" section, Social Cause Data represents the data that is gathered from organizations (NASA, NOAA, EPA, UN, etc.) that is used to drive the art generation portion of the project. 
+**Description:** As mentioned in the "External API Access" section, Social Cause Data represents the data that is gathered from organizations (NASA, NOAA, EPA, UN, etc.) that is used to drive the art generation portion of the project. <br/>
 
 #### Social Media Connectivity
-**Description:** As mentioned in the "External API Access" section, Social Media Connectivity represents the API used to share the generated art to social media sites such as Snapchat, Facebook, Instagram, and X. 
+**Description:** As mentioned in the "External API Access" section, Social Media Connectivity represents the API used to share the generated art to social media sites such as Snapchat, Facebook, Instagram, and X. <br/>
 
 #### Logging and Error Checking
-**Description:** This is not mentioned on any diagram, however, Logging and Error Checking is vital to this project. Each individual subsystem will utilize shared logging and error checking methods to improve the developer's ability to debug and develop the software for this project. It should be assumed that all subsystems in this section or future sections (Front End Driver Architecutre and Back End Driver Architecture) will utilize the shared Logging and Error Checking components. Note, since there are a variety of languages being used for development, each language will have its own logging and error checking library. The goal will be to make the outputs of each type similar so that debugging will become uniform.   
+**Description:** This is not mentioned on any diagram, however, Logging and Error Checking is vital to this project. Each individual subsystem will utilize shared logging and error checking methods to improve the developer's ability to debug and develop the software for this project. It should be assumed that all subsystems in this section or future sections (Front End Driver Architecutre and Back End Driver Architecture) will utilize the shared Logging and Error Checking components. Note, since there are a variety of languages being used for development, each language will have its own logging and error checking library. The goal will be to make the outputs of each type similar so that debugging will become uniform. <br/>
 
 
 
@@ -56,21 +56,20 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 
 #### User Command
-As described in the 'High-Level System Architecture' Section, the System User is ...
-Features include: Mouse, keyboard, and Camera Detection <br />
-Security: Safe camera access <br />
-Technology: TSX <br />
-
-Generate, Import Personal Data Set, Select Mode (Camera, Image, Video, etc), Select Effects or Data Set to be Used, Login, Download File, Export File to Social Media
-
-
-
+**Description:** As described in the 'High-Level System Architecture' Section, the System User controls all aspects of the application through the User Interface. The purpose of the User Command sub-system is to convert the System User's commands in the User Interface to messages that can be sent across the Front End - Back End Gateway into the Back End Driver. These commands can cover a wide range of options, which will be listed and described below: <br/>
+* **Select Image Mode:** This type of command handles the System User selecting the input type into the art generation. Potential options include a live webcam image, a live webcam video, an image file, or a video file. <br/>
+* **Select Image Source:** Different from the "Select Image Mode" option, this type of command refers to the actual sending of data relevant to the file type that is referred to in Select Image Mode. <br/>
+* **Select Effects:** This type of command handles the System User selecting the effect type that they would like to be applied to the art generation. Potential options include a flame, drowning effects, or a drying effect. <br/>
+* **Select Data Set:** This type of command handles the System User selecting the type of data set that they would like to use to generate their art. Options will include a variety of options from organzations like NASA, NOAA, EPA, and the UN. <br/>
+* **Import Data Set:** This type of command handles the System User selecting an option to import their own data sets to be used for art generation. The System User can upload up to 3 different personal datasets to be stored if they have a user account. Similarly, the user will have access to any other public data set that is created by other users. <br/>
+* **Generate:** This type of command allows the System user to generate their art, once all of the appropriate parameters such as image source and effect type have been chosen. <br/>
+* **Download File:** This type of command allows the System User to download the file of the image or video that they have generated. <br/>
+* **Export File:** This type of command allows the System User to export the image or video that has been generated to an external social media platform. <br/>
+* **Login:** This type of command allows the System User to login to their user account. This enables the user to utilize their own personal data sets and have access to public datasets that are created by other users.<br/>
 
 
 #### System Response
-Acts as a central connection between the user and the processes. Displays output to the user component. <br />
-Features include: User Panel, Dataset Selection, Parameter Customization, Animations, <br />
-Technology: NextJS, p5.js, three.js, canvas.js <br />
+**Description:** The System Response subsystem is responsible for providing the System User with all data that drives the User Interface. Examples of this are datum coming from the back-end relevant to the art generation such as the image data iteself. The System Response subsystem ensures that all outputs that should be expected from the System User input's are delivered from the Back End Driver. 
 
 ## Back-End Architecture
 
