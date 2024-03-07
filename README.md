@@ -69,23 +69,22 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 
 #### System Response
-**Description:** The System Response subsystem is responsible for providing the System User with all data that drives the User Interface. Examples of this are datum coming from the back-end relevant to the art generation such as the image data iteself. The System Response subsystem ensures that all outputs that should be expected from the System User input's are delivered from the Back End Driver. 
+**Description:** The System Response subsystem is responsible for providing the System User with all data that drives the User Interface. Examples of this are datum coming from the back-end relevant to the art generation such as the image data iteself. The System Response subsystem ensures that all outputs that should be expected from the System User input's are delivered from the Back End Driver. <br/>
 
-## Back-End Architecture
+
+
+## Back End Driver Architecture
 
 ![Back End HLD](/img/arch_BackEnd.jpg)
-
+(
 #### Back End Command Interface
-Combines user requests with real time data from external API to affect image processing. <br />
-Technologies: Python, OpenCV <br />
+**Description:** The Back End Command Interface is the lifeblood of the Back End Driver. A high level description of the purpose of the Back End Command Interface is to handle input messages from the Front End Driver through the Front End - Back End Gateway, perform some processing, and output the results of the input message, either to the Front End or to an external API.  In reality, the Back End Command Interface acts as a mediator for all computation. Once a message is received by the Back End Command Interface, it is the sole driver of accessing the proper API and Database's, and performing the art generation. It coordinates the data transfer to and from each subsystem and API, and is responsible for combining the cumulative efforts of each subsystem and outputting their result to the desired destination. 
 
 #### Database
-Way of accessing external data relevant to user input selections <br />
-Technologies: Python <br />
+**Description:** The Database holds relevant long term information that can be used by the system. This includes login information, uploaded datasets for each user, and saved images or videos for each user. The data from the Database can be accessed and used by any component in the Back End Driver, and should be treated securely as it will contain information relevant to any System User with a user account. 
 
 #### Art Generation Driver
-Stores recent data for faster computations. <br />
-Technologies: SQL <br />
+**Description:** The Art Generation Driver is the most critical component to this project. Simply put, the Art Generation Project is a Image Signal Processing (ISP), Computer Vision (CV), Machine Learning (ML), and Deep Learning (DL) product. While there are critical components outside of the Art Generation, they are rendered useless unless we have quality graphics being generated. This subsystem drives all of the ISP needed for our project using technologies founded in CV, ML, and DL. The Art Generation Driver takes commands and data that are provided from the Back End Command Interface, and outputs its result to the Back End Command Interface. 
 
 
 
