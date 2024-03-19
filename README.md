@@ -85,6 +85,7 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 ![Backend HLD](/img/arch_backend.jpg)
 
+<<<<<<< HEAD
 #### Backend Command Interface
 
 **Description:** The Backend Command Interface is the lifeblood of the Backend Driver. A high level description of the purpose of the Backend Command Interface is to handle input messages from the Front End Driver through the Frontend-Backend Gateway, perform some processing, and output the results of the input message, either to the Frontend or to an external API. In reality, the Backend Command Interface acts as a mediator for all computation. Once a message is received by the Backend Command Interface, it is the sole driver of accessing the proper API and Database's, and performing the art generation. It coordinates the data transfer to and from each subsystem and API, and is responsible for combining the cumulative efforts of each subsystem and outputting their result to the desired destination. <br/>
@@ -94,10 +95,27 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 **Description:** The Database holds relevant long term information that can be used by the system. This includes login information, uploaded datasets for each user, and saved images or videos for each user. The data from the Database can be accessed and used by any component in the Backend Driver, and should be treated securely as it will contain information relevant to any System User with a user account. <br/>
 
 #### Art Generation Driver
+=======
+![Back End HLD](/img/arch_BackEnd.jpg)
+(
+#### Back End Command Interface
+**Description:** The Back End Command Interface is the lifeblood of the Back End Driver. A high level description of the purpose of the Back End Command Interface is to handle input messages from the Front End Driver through the Front End - Back End Gateway, perform some processing, and output the results of the input message, either to the Front End or to an external API.  In reality, the Back End Command Interface acts as a mediator for all computation. Once a message is received by the Back End Command Interface, it is the sole driver of accessing the proper API and Database's, and performing the art generation. It coordinates the data transfer to and from each subsystem and API, and is responsible for combining the cumulative efforts of each subsystem and outputting their result to the desired destination. 
+
+#### Database
+**Description:** The Database holds relevant long term information that can be used by the system. This includes login information, uploaded datasets for each user, and saved images or videos for each user. The data from the Database can be accessed and used by any component in the Back End Driver, and should be treated securely as it will contain information relevant to any System User with a user account. 
+
+#### Art Generation Driver
+**Description:** The Art Generation Driver is the most critical component to this project. Simply put, the Art Generation Project is a Image Signal Processing (ISP), Computer Vision (CV), Machine Learning (ML), and Deep Learning (DL) product. While there are critical components outside of the Art Generation, they are rendered useless unless we have quality graphics being generated. This subsystem drives all of the ISP needed for our project using technologies founded in CV, ML, and DL. The Art Generation Driver takes commands and data that are provided from the Back End Command Interface, and outputs its result to the Back End Command Interface. 
+
+>>>>>>> parent of f71df4a (Added Some Breaks)
 
 **Description:** The Art Generation Driver is the most critical component to this project. Simply put, the Art Generation Project is a Image Signal Processing (ISP), Computer Vision (CV), Machine Learning (ML), and Deep Learning (DL) product. While there are critical components outside of the Art Generation, they are rendered useless unless we have quality graphics being generated. This subsystem drives all of the ISP needed for our project using technologies founded in CV, ML, and DL. The Art Generation Driver takes commands and data that are provided from the Backend Command Interface, and outputs its result to the Backend Command Interface. <br/>
 
 ## Team Member Expected Assignments
+<<<<<<< HEAD
+=======
+We have divided our team into three sub-teams to tackle the challenging problems associated with creating a web-based application that is driven by computer vision and image processing. The three sub-teams are: Front End, Back End, and Graphics. Each team covers certain aspects of the code base, that collectively form the entirety of the Art Generation Project.
+>>>>>>> parent of f71df4a (Added Some Breaks)
 
 We have divided our team into three sub-teams to tackle the challenging problems associated with creating a web-based application that is driven by computer vision and image processing. The three sub-teams are: Frontend, Backend, and Processing. Each team covers certain aspects of the code base, that collectively form the entirety of the Art Generation Project. <br/>
 
