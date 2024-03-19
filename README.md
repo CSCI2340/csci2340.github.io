@@ -21,7 +21,7 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 ## High-Level System Architecture
 
-![Overall System HLD](/img/arch_overall.jpg)
+![Overall System HLD](/assets/arch_overall.jpg)
 
 #### System User
 
@@ -61,7 +61,7 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 ## Frontend Driver Architecture
 
-![Frontend HLD](/img/arch_frontend.jpg)
+![Frontend HLD](/assets/arch_frontend.jpg)
 
 #### User Command
 
@@ -83,7 +83,7 @@ The Art Generator Project is a user-driven, web-based art generation product tha
 
 ## Backend Driver Architecture
 
-![Backend HLD](/img/arch_backend.jpg)
+![Backend HLD](/assets/arch_backend.jpg)
 
 #### Backend Command Interface
 
