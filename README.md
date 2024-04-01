@@ -111,3 +111,6 @@ We have divided our team into three sub-teams to tackle the challenging problems
 **Alexander Pratt:** Processing - Image Processing <br />
 **Morgann Thain:** Backend - SQL Database <br />
 **Haiyang Wang:** Processing - API Connections <br />
+
+[Privacy Policy](privacy.md) <br />
+[Terms & Conditions](terms.md) <br />
